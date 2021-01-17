@@ -22,6 +22,16 @@
       </div>
     </header>
     <div id="wrapper">
+      <div class="search-area">
+        <form id="search-form">
+          <input type="text" id="search-text" placeholder="商品名か値段を入力" />
+          <div id="search-btn">検索</div>
+        </form>
+        <div class="search-result">
+          <div class="search-result__hit-num"></div>
+          <div id="search-result__list"></div>
+        </div>
+      </div>
       <div class="item_wrapper">
         <h1 class="fashion_label">ファッション</h1>
         <ul class="item_list fashion">
@@ -211,7 +221,6 @@
               </div>
             </div>
           </li>
-          
 
           <li class="item">
             <div class="item_img">
@@ -235,9 +244,10 @@
               </div>
             </div>
           </li>
-          
         </ul>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   </body>
 </html>
